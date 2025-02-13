@@ -14,8 +14,8 @@ def get_meteo(municipioid):
         
         meteo_data = {
             'temperatura': data.get('temperatura_actual'),
-            'temperatura_max': data.get('temperatura_max'),
-            'temperatura_min': data.get('temperatura_min'),
+            'temperatura_max': data.get('temperaturas').get('max'),
+            'temperatura_min': data.get('temperaturas').get('min'),
             'humedad': data.get('humedad'),
             'viento': data.get('viento'),
             'precipitacion': data.get('precipitacion'),
