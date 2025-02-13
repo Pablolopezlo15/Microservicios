@@ -3,7 +3,7 @@ import json
 
 app3 = Flask(__name__)
 
-@app3.route('/<string:municipioid>/datos', methods=['GET'])
+@app3.route('/<string:municipioid>/demo', methods=['GET'])
 def get_geo(municipioid):
     with open('municipio.json', 'r') as file:
         json_data = json.load(file)
